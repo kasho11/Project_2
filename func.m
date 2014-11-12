@@ -53,3 +53,5 @@ imwrite(reshape(uint8(255/(max(max(u4))-min(min(u4)))*(u4-min(min(u4)))),250,250
 imwrite(reshape(uint8(255/(max(max(u5))-min(min(u5)))*(u5-min(min(u5)))),250,250),"pic5.jpg");
 imwrite(reshape(uint8(255/(max(max(u6))-min(min(u6)))*(u6-min(min(u6)))),250,250),"pic6.jpg");
 save facespace.txt facespace;
+
+pk=facespace'*(Faces(:,1)-AvgFace);
